@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/TheLeague.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./TheLeague.com_files/css2" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(1)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(2)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(3)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(4)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(5)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(6)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(7)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(8)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(9)" rel="stylesheet">
+<link href="./TheLeague.com_files/css2(10)" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TheLeague.com_files/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: white;
+
+        }
+
+        .third-level-menu {
+            position: absolute;
+            top: 0;
+            right: -190px;
+            width: 190px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        .third-level-menu>li {
+            height: 45px;
+            background-color: #6640C1;
+            background: #6640C1;
+        }
+
+        .third-level-menu>li:hover {
+            background-color: gold;
+        }
+
+        .second-level-menu {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            /* width: 273.2px; */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        .second-level-menu>li {
+            position: relative;
+            height: 45px;
+            background-color: #6640C1;
+            background: #6640C1;
+            width: 100%;
+        }
+
+        .second-level-menu>li:hover {
+            background-color: gold;
+        }
+
+        .top-level-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 1;
+            justify-content: space-between;
+
+        }
+
+        .top-level-menu>li {
+            position: relative;
+            height: 30px;
+            /* width: 273.2px; */
+            background: #6640C1;
+            z-index: 2;
+            text-align: center;
+            flex: 1;
+
+        }
+
+        .top-level-menu>li:hover {
+            background-color: gold !important;
+        }
+
+        .top-level-menu li:hover>ul {
+            /* On hover, display the next level's menu */
+            display: inline;
+
+
+        }
+
+
+        /* Menu Link Styles */
+
+        .top-level-menu a
+
+        /* Apply to all links inside the multi-level menu */
+            {
+            font-family: 'Fjalla One', sans-serif;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0 0 0 10px;
+            background: #6640C1;
+
+
+            /* Make the link cover the entire list item-container */
+            display: block;
+            line-height: 45px;
+        }
+
+        .top-level-menu a:hover {
+            color: #000000;
+            background-color: gold;
+        }
+
+
+        .container1 {
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            overflow: auto;
+
+        }
+
+
+        .gallery {
+            margin: 5px;
+            border: 5px solid black;
+            border-radius: 5%;
+            float: left;
+            width: 390px;
+
+
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5%;
+
+        }
+
+        .gallery:hover {
+            transform: scale(1.03);
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            font-family: 'Fjalla One', sans-serif;
+            ;
+        }
+
+
+        #main-title {
+            font-family: 'Alfa Slab One', cursive;
+            color: black;
+            font-size: 60px;
+            margin: 20px;
+            padding: 30px;
+            position: relative;
+            bottom: -20px;
+            background-color: transparent;
+            display: inline-block;
+            text-align: center;
+        }
+
+
+        .footer {
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            color: white;
+            height: 300px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container2 {
+            max-width: 1500px;
+            margin: auto;
+            overflow: auto;
+        }
+
+        .container-top {
+            position: fixed;
+            background-color: gold;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1;
+            text-align: center;
+
+        }
+
+        .top {
+            display: inline-block;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 30px;
+            width: 100%;
+            margin: -20px;
+            z-index: 1;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            object-fit: cover;
+            width: 100%;
+
+
+        }
+
+        .moving-images {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: auto;
+            position: relative;
+            margin-top: -4%;
+
+
+
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 2px 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .arrow {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            align-items: center;
+        }
+
+        .arrow i:hover {
+            color: black;
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    </style>
+    <title>TheLeague.com</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-top">
+            <div class="top">
+                <p>Shop 20% Off All Jerseys Now!</p>
+            </div>
+        </div>
+        <div>
+            <div style="text-align: center;">
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/TheLeague.html#">
+                    <h1 id="main-title">The<u>League</u></h1>
+                </a>
+                <a style="text-decoration: none; color: black;" href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-search" style="font-size: 20px; margin: 0 auto;"></i></a>
+                <a style="text-decoration: none; color: black;" href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-shopping-cart" style="font-size: 20px; margin: 0 auto;"></i></a>
+            </div>
+        </div>
+        <ul class="top-level-menu">
+            <li><a href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-home" style="font-size: 20px;"></i> Home</a></li>
+            <li>
+                <a href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-tag" style="font-size: 20px"></i> Shop All ▼ </a>
+                <ul class="second-level-menu">
+                    <li><a href="http://127.0.0.1:5500/TheLeague.html#">Jerseys</a></li>
+                    <li><a href="http://127.0.0.1:5500/TheLeague.html#">Hats</a></li>
+                    <li><a href="http://127.0.0.1:5500/TheLeague.html#">Gym Shorts</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-flask" style="font-size: 20px;"></i> Customize</a></li>
+            <li>
+                <a href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-futbol-o" style="font-size: 20px;"></i> Teams ▼</a>
+                <ul class="second-level-menu">
+                    <li>
+                        <a href="http://127.0.0.1:5500/TheLeague.html#">Soccer</a>
+                        <ul class="third-level-menu">
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Barcelona</a></li>
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">PSG</a></li>
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Real Madrid</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/TheLeague.html#">Basketball</a>
+                        <ul class="third-level-menu">
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Golden State Warriors</a></li>
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Celtics</a></li>
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Chicago Bulls</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/TheLeague.html#">Football</a>
+                        <ul class="third-level-menu">
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">New England Patriots</a></li>
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Ravens</a></li>
+                            <li><a href="http://127.0.0.1:5500/TheLeague.html#">Atlanta Falcons</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </li><li><a href="http://127.0.0.1:5500/TheLeague.html#"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 20px;"></i> Contacts Us</a>
+            </li>
+            
+
+        </ul>
+
+        <div class="slideshow-container moving-images">
+
+            <div class="mySlides" style="display: none;">
+                <img src="./TheLeague.com_files/kobe-bryant-041315-getty-ftrjpg_hnmwtxmeqtvu1fyv5fnzn6abh.jpg" alt="kobe holding shirt" style="width:100%">
+            </div>
+
+            <div class="mySlides" style="display: none;">
+                <img src="./TheLeague.com_files/lionel-messi-fc-art-1m-1366x768.jpg" style="width:100%">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides" style="display: block;">
+                <img src="./TheLeague.com_files/wallpapersden.com_tom-brady-new-england-patriots-football_1366x768.jpg" style="width:100%;">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+            <div style="text-align: center;">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"><strong>❮ Prev</strong>
+                </button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><strong>Next ❯</strong>
+                </button>
+            </div>
+        </div>
+        <div style="text-align:center; margin: 10px;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+        </div>
+
+
+        <!-- JavaScript -->
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+
+
+
+
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+
+        <!-- End of JavaScript -->
+
+        <div style="margin: 30px;">
+            <hr>
+            
+        </div>
+
+        <br><br>
+        <h3 style="text-align: center;font-size: 30px; color: black;font-family:&#39;Fjalla One&#39;, sans-serif; ;">Featured
+            Jerseys</h3><br><br><br>
+        <div class="container1">
+            <div class="gallery">
+                <img src="./TheLeague.com_files/re-2019-2020-barcelona-home-nike-shirt-kids-messi-10-1559836177.png" alt="The image shows the 2019-2020 Barcelona jersey">
+                <div class="desc"> Barcelona 2019: Messi Jersey </div>
+            </div>
+            <div class="gallery">
+                <img src="./TheLeague.com_files/thumb.aspx" alt="The image shows the 2019-2020 Barcelona jersey">
+                <div class="desc"> Golden State Warriors 2019: StephCurry Jersey </div>
+            </div>
+            <div class="gallery">
+                <img src="./TheLeague.com_files/thumb(1).aspx" alt="The image shows the 2019-2020 Barcelona jersey">
+                <div class="desc"> Canucks 2019: Customizable Jersey </div>
+            </div>
+            <div class="gallery">
+                <img src="./TheLeague.com_files/5e86c1d100c605394a614f9c-large.jpg" alt="The image shows the 2019-2020 Barcelona jersey">
+                <div class="desc"> Patriots 2019: Tom Brady Jersey </div>
+            </div>
+            <div class="gallery">
+                <img src="./TheLeague.com_files/thumb(2).aspx" alt="The image shows the 2019-2020 Barcelona jersey">
+                <div class="desc"> PSG 2019: Neymar Jersey </div>
+            </div>
+            <div class="gallery">
+                <img src="./TheLeague.com_files/thumb.jpg" alt="The image shows the 2019-2020 Barcelona jersey">
+                <div class="desc"> Lakers 2019: Kobe Bryant Jersey </div>
+            </div>
+
+        </div>
+
+
+        <div style="margin: 30px;">
+            <hr>
+            
+        </div>
+        <div class="footer">
+            <div style="float: left; margin: 0 auto; padding: 0 0 0 40px;">
+                <p><a href="http://127.0.0.1:5500/TheLeague.html#"><strong>Find a Store</strong></a></p>
+                <p><a href="http://127.0.0.1:5500/TheLeague.html#"><strong>Sign Up For Email</strong></a></p>
+                <p><a href="http://127.0.0.1:5500/TheLeague.html#"><strong>Become A Member</strong></a></p>
+                <p><a href="http://127.0.0.1:5500/TheLeague.html#"><strong>Site Feedback</strong></a></p>
+            </div>
+            <div style="float:right; margin: 0 auto; width: 300px;">
+                <p>Get Help</p>
+                <p>Order Status</p>
+                <p>Shipping and Delivery</p>
+                <p>Returns</p>
+                <p>Payment Options</p>
+                <p>Contact Us</p>
+            </div>
+            <div style="margin:0 auto; width:200px; padding:4px 0 0 0;">
+                <strong>
+                    <p>About The League</p>
+                </strong>
+                <p>News</p>
+                <p>Careers</p>
+                <p>Investors</p>
+                <p>Sustainability</p>
+            </div>
+            <div style="margin: 30px; color: white;"><br>
+                <hr>
+                
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+</body></html>
