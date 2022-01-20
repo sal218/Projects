@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            align-content: center;
+            background-color: white;
+            overflow: auto;
+
+        }
+
+
+        .gallery {
+            margin: 3px;
+            flex: 1 auto;
+            border: 5px solid black;
+
+            width: 390px;
+            display: inline-block;
+
+
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+
+
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            /* For mobile phones: */
+            .gallery {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+
+
+            }
+
+            .mid-one-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: baseline;
+                align-content: center;
+                background: black;
+                overflow: auto;
+
+            }
+
+            .mid-one-items {
+                order: 3;
+                flex: 1 auto;
+                display: inline-block;
+
+            }
+
+            .mid-one-items img {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .mid-one-items .img-top {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 50;
+            }
+
+
+            .mid-one-items:hover .img-top {
+                display: inline;
+            }
+
+            @media only screen and (max-width: 650px) {
+                .mid-one-items img {
+                    width: 200px;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container1">
+            <div class="gallery">
+                <div class="mid-one-items">
+                    <img
+                        src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+                    <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/dzsv4wxmgirdghtx8nln/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg"
+                        class="img-top" alt="Card Front">
+                </div>
+
+            </div>
+            <!-- <div class="gallery">
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+
+            </div>
+            <div class="gallery">
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+
+            </div>
+            <div class="gallery">
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+
+            </div>
+            <div class="gallery">
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+
+            </div>
+            <div class="gallery">
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+
+            </div> -->
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

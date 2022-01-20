@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="MyStyle.css" />
+    <title>TheLeague.com</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="announcement">
+            <p>Shop 20% Off All Jerseys!</p>
+        </div>
+        <div class="title-block">
+            <div style="float:right; margin: 0 auto;">
+                <div class=" search-icon" style="margin-right: 75px; margin-top: 5px;">
+                    <input class="search-icon__input" placeholder="search ...">
+
+                    <div class="search-icon__wrapper">
+                        <div class="search-icon__glass"></div>
+                        <div class="search-icon__handle"></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" style="text-decoration: none; color: black"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h2
+                    style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 50px;">
+                    Select Your Location</h2>
+                <a href="#">Africa</a>
+                <a href="#">Americas</a>
+                <a href="#">Asia Pacific</a>
+                <a href="#">Europe</a>
+                <a href="#">Middle East</a>
+            </div>
+        </div>
+
+
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closesideNav()"><i class="fa fa-times"
+                    style="font-size: 25px;"></i></a>
+            <a href="#">Home</a>
+            <a href="#">Shop All</a>
+            <a href="#">Customize</a>
+            <a href="#">Sports</a>
+            <a href="#">Contact Us</a>
+            <a href="#" style="position: relative; top: 45%;">Login</a>
+            <a href="#" style="position: relative; top: 45%;">Create account</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="opensideNav()"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class=" main-title">
+            <a style="text-decoration: none;" href="TheLeague.html">
+                <h1 style="color: black;">The<u>League</u>
+                </h1>
+            </a>
+
+        </div>
+
+
+
+        <ul class="top-level-menu">
+            <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+            <li>
+                <a href="#"><i class="fa fa-tag"></i> Shop All &#x25BC; </a>
+                <ul class="second-level-menu">
+                    <li><a href="#">Jerseys</a></li>
+                    <li><a href="#">Hats</a></li>
+                    <li><a href="#">Gym Shorts</a></li>
+                </ul>
+            </li>
+            <li><a href="customize.html"><i class="fa fa-flask"></i> Customize</a></li>
+            <li>
+                <a href="#"><i class="fa fa-futbol-o"></i> Sports &#x25BC;</a>
+                <ul class="second-level-menu">
+                    <li>
+                        <a href="#">Soccer</a>
+                        <ul class="third-level-menu">
+                            <li><a href="#">Shop All Soccer</a></li>
+                            <li><a href="#">Barcelona</a></li>
+                            <li><a href="#">PSG</a></li>
+                            <li><a href="#">Real Madrid</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Basketball</a>
+                        <ul class="third-level-menu">
+                            <li><a href="#">Shop All Basketball</a></li>
+                            <li><a href="#">Chicago Bulls</a></li>
+                            <li><a href="#">Celtics</a></li>
+                            <li><a href="#">Golden State Warriors</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Football</a>
+                        <ul class="third-level-menu">
+                            <li><a href="#">Shop All Football</a></li>
+                            <li><a href="#">Atlanta Falcons</a></li>
+                            <li><a href="#">Ravens</a></li>
+                            <li><a href="#">New England Patriots</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            <li><a href="contactus.html"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    Contacts Us</a>
+            </li>
+            </li>
+
+        </ul>
+
+        <div class="slideshow-container moving-images" data-pause="hover">
+
+            <div class="mySlides">
+                <img src="https://images.daznservices.com/di/library/sporting_news/a/fe/kobe-bryant-041315-getty-ftrjpg_hnmwtxmeqtvu1fyv5fnzn6abh.jpg?t=926331162&quality=100"
+                    alt="kobe holding shirt" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://images.hdqwalls.com/download/lionel-messi-fc-art-1m-1366x768.jpg" style="width:100%">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides">
+                <img src="https://images.wallpapersden.com/image/download/tom-brady-new-england-patriots-football_21828_1366x768.jpg"
+                    style="width:100%;">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+            <!-- <div style="text-align: center;">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"><strong>&#10094; Prev</strong>
+                </button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><strong>Next &#10095;</strong>
+                </button>
+            </div> -->
+        </div>
+        <div style="text-align:center; margin: 10px;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <h3
+            style="text-align: center;font-size: 30px; color: black;font-family:'Fjalla One', sans-serif; padding: 40px 0 0 0;">
+            Featured
+            Jerseys</h3>
+        <div class="container-box">
+            <div class="box">
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/egamzcy0qviwbrbhbfp3/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+                <img class="hover-img"
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/dzsv4wxmgirdghtx8nln/fc-barcelona-2019-20-vapor-match-home-football-shirt-d16q4Q.jpg">
+            </div>
+            <div class="box">
+                <img
+                    src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/m65penejikj8c00svcmo/stephen-curry-earned-city-edition-swingman-golden-state-warriors-mens-nba-connected-jersey-4Vr7FK.jpg">
+                <img class="hover-img"
+                    src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/fm4aihaj6diuyf1htuot/stephen-curry-earned-city-edition-swingman-golden-state-warriors-mens-nba-connected-jersey-4Vr7FK.jpg">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+            <div class="box">
+                <img src="https://picsum.photos/id/1015/400/450">
+                <img class="hover-img" src="https://picsum.photos/id/1016/400/450">
+            </div>
+
+
+        </div>
+
+
+
+        <div style="margin: 30px;">
+            <hr>
+            </hr>
+        </div>
+
+
+
+
+        <div style="margin: 30px;">
+            <hr>
+            </hr>
+        </div>
+        <div class="subscribe-container">
+            <h2 style="font-family: 'Permanent Marker', cursive; font-size: 28px; color: black,">Join
+            </h2>
+            <h4 style="font-family: 'Alfa Slab One', cursive; font-size: 35px;color: black">The<u>League</u></h4><br>
+            <input type="text" placeholder="Email Address"
+                style="width: 30%; height: 35px; background-color: #f6f6f6; border-radius: 4px; border-style: double; border-width: thin;">
+            <button type=“submit”>Submit</button>
+            <h3 style="font-family: 'Permanent Marker', cursive; font-size: 20px; color: black;">Let us email
+                you the sickest
+                deals! Never miss a sale.</h3>
+        </div>
+        <div class="container">
+            <div class="items">
+
+                <p id="footer-headings">Useful Links</p><br>
+                <p><a href="#" class="underline">Find a Store</a></p><br>
+                <p><a href="#" class="underline">Sign Up For Email</a></p><br>
+                <p><a href="#" class="underline">Become A Member</a></p><br>
+                <p><a href="#" class="underline">Site Feedback</a></p>
+            </div>
+
+            <div class="items" style="text-decoration: none; color: white;">
+                <p id="footer-headings">
+                    <strong>Policies</strong></p><br>
+                <p><a href="#" class="underline">Terms of service</a></p><br>
+                <p><a href="#" class="underline">Refund</a></p><br>
+                <p><a href="#" class="underline">Privacy</a></p><br>
+                <p><a href="#" class="underline">Shipping</a></p>
+            </div>
+
+            <div class="items" style="text-decoration: none; color: white;">
+                <p id="footer-headings">Need To Talk?</p><br>
+                <p><a href="#" class="underline">Order Status</a></p><br>
+                <p><a href="#" class="underline">Returns</a></p><br>
+                <p><a href="#" class="underline">Payment Options</a></p><br>
+                <p><a href="#" class="underline">Contact Us</a></p><br>
+            </div>
+
+            <div class="items">
+                <h3 id="footer-headings">Follow Us!</h3><br>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+        </div>
+        <div class="copy-right-container">
+            <div class="copy-right-items">
+                <hr>
+                </hr>
+                <span style="font-size: 15px;" id="span-tag-overlay" onclick="openNav()"><i class="fa fa-map-marker"
+                        style="font-size:15px"></i>
+                    Canada</span>
+                <p>&#169; 2020 TheLeague, All Rights Reserved</p>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    <script>
+    const searchIcon = document.querySelector(".search-icon__wrapper");
+
+    searchIcon.addEventListener("click", e => searchIcon.parentElement.classList.toggle("open"));
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+
+
+
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+    function opensideNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+    function closesideNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+</body>
+
+
+
+
+
+</html>
